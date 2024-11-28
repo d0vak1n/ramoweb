@@ -17,34 +17,25 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<div class="flex flex-col items-center m-8 align-middle">
+			<a href="/">
+				<img
+					src="./../../public/1.webp"
+					alt="Logo Ramoweb"
+					class="w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 transition hover:scale-105"
+				/>
+			</a>
+			<h1 class="mx-8 my-4 text-center text-4xl">RamoWeb</h1>
+			<h2 class="text-gray-500">Welcome to Raul Moreno Website</h2>
+		</div>
 		<slot />
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+			"Liberation Mono", "Courier New", monospace;
+		background-color: #000;
+		color: #fff;
 	}
 </style>
