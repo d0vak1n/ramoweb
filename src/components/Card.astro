@@ -3,9 +3,10 @@ interface Props {
 	title: string;
 	body: string;
 	href: string;
+	tags: string[];
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, tags } = Astro.props;
 ---
 
 <div class="flex flex-col bg-slate-500 rounded p-6">
@@ -14,12 +15,25 @@ const { href, title, body } = Astro.props;
 			<h3>
 				{title}
 			</h3>
-			<p>
+			<p class="text-justify">
 				{body}
 			</p>
-			<div class="flex justify-between">
-				<a href="">github</a>
-				<a href="">demo</a>
+			<div class="flex flex-wrap gap-2 my-2 justify-center">
+				{tags.map((tag) => <span class="tag">{tag}</span>)}
+			</div>
+			<div class="flex justify-between mt-6">
+				<a
+					class="link github hover:animate-pulse"
+					href=""
+					target="_blank"
+					rel="noopener noreferrer">github</a
+				>
+				<a
+					class="link demo hover:animate-pulse"
+					href=""
+					target="_blank"
+					rel="noopener noreferrer">demo</a
+				>
 			</div>
 		</div>
 	</li>
@@ -34,5 +48,32 @@ const { href, title, body } = Astro.props;
 	p {
 		margin-top: 0.5rem;
 		margin-bottom: 0;
+	}
+	.link {
+		background-color: #000;
+		padding: 0.5rem 1rem;
+		transition: transform 0.3s ease;
+
+		&.github {
+			color: #0efeff;
+		}
+
+		&.demo {
+			color: #e213e6;
+		}
+	}
+	.link:hover {
+		transform: scale(1.1);
+	}
+
+	.tag {
+		transition:
+			transform 0.3s ease,
+			margin 0.3s ease;
+	}
+
+	.tag:hover {
+		transform: scale(1.1);
+		margin: 0 0.5rem;
 	}
 </style>
