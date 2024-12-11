@@ -2,14 +2,15 @@
 interface Props {
 	title: string;
 	body: string;
-	href: string;
+	github: string;
+	demo?: string;
 	tags: string[];
 }
 
-const { href, title, body, tags } = Astro.props;
+const { title, body, tags, github, demo } = Astro.props;
 ---
 
-<div class="flex flex-col bg-slate-500 rounded p-6">
+<div class="flex flex-col bg-black border border-white rounded p-6 max-w-96">
 	<li class="link-card list-none">
 		<div>
 			<h3>
@@ -24,16 +25,22 @@ const { href, title, body, tags } = Astro.props;
 			<div class="flex justify-between mt-6">
 				<a
 					class="link github hover:animate-pulse"
-					href=""
+					href={github}
 					target="_blank"
 					rel="noopener noreferrer">github</a
 				>
-				<a
-					class="link demo hover:animate-pulse"
-					href=""
-					target="_blank"
-					rel="noopener noreferrer">demo</a
-				>
+				{
+					demo && (
+						<a
+							class="link demo hover:animate-pulse"
+							href={demo}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							demo
+						</a>
+					)
+				}
 			</div>
 		</div>
 	</li>
@@ -45,10 +52,12 @@ const { href, title, body, tags } = Astro.props;
 		font-size: 1.25rem;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
+
 	p {
 		margin-top: 0.5rem;
 		margin-bottom: 0;
 	}
+
 	.link {
 		background-color: #000;
 		padding: 0.5rem 1rem;
@@ -62,6 +71,7 @@ const { href, title, body, tags } = Astro.props;
 			color: #e213e6;
 		}
 	}
+
 	.link:hover {
 		transform: scale(1.1);
 	}
@@ -69,11 +79,11 @@ const { href, title, body, tags } = Astro.props;
 	.tag {
 		transition:
 			transform 0.3s ease,
-			margin 0.3s ease;
+			padding 0.3s ease;
 	}
 
 	.tag:hover {
 		transform: scale(1.1);
-		margin: 0 0.5rem;
+		padding: 0 1rem;
 	}
 </style>
