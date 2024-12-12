@@ -1,5 +1,5 @@
 ---
-import { ClientRouter } from 'astro:transitions';
+import { ClientRouter } from "astro:transitions";
 interface Props {
 	title: string;
 }
@@ -10,22 +10,29 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
+		<ClientRouter />
 		<meta charset="UTF-8" />
 		<meta name="description" content="RaMoWeb portfolio" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<ClientRouter />
 	</head>
 	<body>
 		<div class="flex flex-col items-center m-8 align-middle">
 			<a href="/">
-				<img
-					src="1.webp"
-					alt="Logo Ramoweb"
-					class="w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 transition hover:scale-105"
-				/>
+				<div class="relative">
+					<img
+						src="1.webp"
+						alt="Logo Ramoweb"
+						class="header-image w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16"
+					/>
+					<img
+						src="2.webp"
+						alt="Logo Ramoweb Hover"
+						class="header-image-hover w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 absolute top-0 left-0 opacity-0"
+					/>
+				</div>
 			</a>
 			<h1 class="header mx-8 my-4 text-center text-4xl">RamoWeb</h1>
 			<h2 class="text-gray-500">Welcome to Raul Moreno Website</h2>
@@ -46,6 +53,11 @@ const { title } = Astro.props;
 			</nav>
 		</div>
 		<slot />
+		<footer>
+			<div class="flex justify-center mb-6 mt-4">
+				RaMoWeb © {new Date().getFullYear()}
+			</div>
+		</footer>
 	</body>
 </html>
 <style is:global>
@@ -55,9 +67,26 @@ const { title } = Astro.props;
 		background-color: #000;
 		color: #fff;
 	}
+
 	.header {
 		text-shadow:
 			-1px -1px 0px #0efeff,
 			1px 1px 0px #e213e6;
+	}
+
+	.header-image {
+		transition: opacity 0.8s ease-in-out;
+	}
+
+	.header-image-hover {
+		transition: opacity 0.8s ease-in-out;
+	}
+
+	.relative:hover .header-image {
+		opacity: 0;
+	}
+
+	.relative:hover .header-image-hover {
+		opacity: 1;
 	}
 </style>
