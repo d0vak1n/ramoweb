@@ -1,54 +1,77 @@
-# Astro Starter Kit: Basics
+# RaMoWeb - Portfolio
 
-```sh
-npm create astro@latest -- --template basics
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/d0vak1n/ramoweb)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://stackblitz.com/github/d0vak1n/ramoweb)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://stackblitz.com/github/d0vak1n/ramoweb)
+
+Welcome to my portfolio! This project is designed to showcase my skills, projects, and experience as a developer. The portfolio is built with **Astro**, **TailwindCSS**, and **TypeScript**, ensuring a modern design and excellent performance.
+
+## 🚀 Technologies Used
+
+| Technology      | Version   | Description                                                               |
+|-----------------|-----------|---------------------------------------------------------------------------|
+| Astro           | ^5.0.4    | Framework for building fast and modern websites.                         |
+| TailwindCSS     | ^3.4.15   | CSS framework for designing interfaces with a utility-first approach.     |
+| TypeScript      | ^5.7.2    | Typed language for scalable and robust application development.           |
+| @astrojs/check  | ^0.9.4    | Tool for verifying and optimizing Astro projects.                         |
+| @astrojs/tailwind | ^5.1.3  | Integration of TailwindCSS with Astro.                                    |
+
+## 📂 Project Structure
+
+```plaintext
+├── public/         # Static files (images, fonts, etc.)
+├── src/            # Main source code
+│   ├── components/ # Reusable components
+│   ├── layouts/    # Base layouts for the project
+│   ├── pages/      # Website pages
+│   └── styles/     # Global styles
+├── package.json    # Project dependencies and scripts
+└── astro.config.mjs # Astro configuration
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 📜 Available Scripts
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+| Command          | Description                                         |
+|------------------|-----------------------------------------------------|
+| `npm run dev`    | Starts the development server locally.              |
+| `npm run build`  | Builds the project for production.                  |
+| `npm run start`  | Alias for `dev`.                                    |
+| `npm run preview`| Previews the project after building.                |
+| `npm run astro`  | Direct access to the Astro CLI.                     |
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🛠 How to Use
 
-## 🚀 Project Structure
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/evolved-chasm.git
+   ```
 
-Inside of your Astro project, you'll see the following folders and files:
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+4. Access the portfolio in your browser at: `http://localhost:3000`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## ✨ Features
 
-Any static assets, like images, can be placed in the `public/` directory.
+- **Optimized Performance:** Uses Astro to load only the necessary content.
+- **Responsive Design:** Built with TailwindCSS for a seamless experience on any device.
+- **Clean Code:** Developed in TypeScript for more structured and maintainable code.
 
-## 🧞 Commands
+## 🌟 Contributions
 
-All commands are run from the root of the project, from a terminal:
+If you want to contribute or report issues, feel free to open an **issue** or submit a **pull request** on this repository.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 📝 License
 
-## 👀 Want to learn more?
+This project is licensed under the [MIT](LICENSE) license.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+Thank you for visiting my portfolio! If you have any questions or want to collaborate, contact me at [raul@ramoweb.com](mailto:raul@ramoweb.com).
