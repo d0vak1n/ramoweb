@@ -31,19 +31,19 @@ Welcome to my portfolio! This project is designed to showcase my skills, project
 
 ## 📜 Available Scripts
 
-| Command          | Description                                         |
-|------------------|-----------------------------------------------------|
-| `npm run dev`    | Starts the development server locally.              |
-| `npm run build`  | Builds the project for production.                  |
-| `npm run start`  | Alias for `dev`.                                    |
-| `npm run preview`| Previews the project after building.                |
-| `npm run astro`  | Direct access to the Astro CLI.                     |
+| Command            | Description                                         |
+|--------------------|-----------------------------------------------------|
+| `npm run astro dev`| Starts the development server locally.              |
+| `npm run build`    | Builds the project for production.                  |
+| `npm run start`    | Alias for `dev`.                                    |
+| `npm run preview`  | Previews the project after building.                |
+| `npm run astro`    | Direct access to the Astro CLI.                     |
 
 ## 🛠 How to Use
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/evolved-chasm.git
+   git clone https://github.com/d0vak1n/ramoweb.git
    ```
 
 2. Install the dependencies:
@@ -53,10 +53,10 @@ Welcome to my portfolio! This project is designed to showcase my skills, project
 
 3. Start the development server:
    ```bash
-   npm run dev
+   npm run astro dev
    ```
 
-4. Access the portfolio in your browser at: `http://localhost:3000`.
+4. Access the portfolio in your browser at: `http://localhost:4321`.
 
 ## ✨ Features
 
