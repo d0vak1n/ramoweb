@@ -12,8 +12,15 @@ const { title } = Astro.props;
 	<head>
 		<ClientRouter />
 		<meta charset="UTF-8" />
-		<meta name="description" content="RaMoWeb portfolio" />
+		<meta
+			name="description"
+			content="RaMoWeb Portfolio. Hello, I'm a software developer, fully interested in open source projects and providing free information for everyone."
+		/>
 		<meta name="viewport" content="width=device-width" />
+		<meta
+			name="keywords"
+			content="software developer, open source, portfolio, RaMoWeb"
+		/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -35,7 +42,10 @@ const { title } = Astro.props;
 				</div>
 			</a>
 			<h1 class="header mx-8 my-4 text-center text-4xl">RamoWeb</h1>
-			<h2 class="text-gray-500">Welcome to my Website</h2>
+			<h2 class="text-gray-500 text-justify w-80">
+				Hello, I'm a software developer, fully interested in open source
+				projects and providing free information for everyone.
+			</h2>
 			<nav>
 				<ul
 					class="flex flex-col text-center sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 mt-4"
