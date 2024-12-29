@@ -6,7 +6,6 @@ import robots from 'astro-robots';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ramoweb.com',
   integrations: [
     tailwind(),
     sitemap(),
