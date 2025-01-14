@@ -10,11 +10,13 @@ Welcome to my portfolio! This project is designed to showcase my skills, project
 
 | Technology      | Version   | Description                                                               |
 |-----------------|-----------|---------------------------------------------------------------------------|
-| Astro           | ^5.0.4    | Framework for building fast and modern websites.                         |
+| Astro           | ^5.1.1    | Framework for building fast and modern websites.                          |
 | TailwindCSS     | ^3.4.15   | CSS framework for designing interfaces with a utility-first approach.     |
 | TypeScript      | ^5.7.2    | Typed language for scalable and robust application development.           |
 | @astrojs/check  | ^0.9.4    | Tool for verifying and optimizing Astro projects.                         |
-| @astrojs/tailwind | ^5.1.3  | Integration of TailwindCSS with Astro.                                    |
+| @astrojs/tailwind | ^5.1.4  | Integration of TailwindCSS with Astro.                                    |
+| @astrojs/sitemap|	^3.2.1   | Generate sitemap for Astro projects.                                      |
+| astro-robots    |	^2.3.0	| Generate robots.txt for Astro projects.                                   |
 
 ## 📂 Project Structure
 
@@ -23,8 +25,8 @@ Welcome to my portfolio! This project is designed to showcase my skills, project
 ├── src/            # Main source code
 │   ├── components/ # Reusable components
 │   ├── layouts/    # Base layouts for the project
+│   ├── img/        # Images assets
 │   ├── pages/      # Website pages
-│   └── styles/     # Global styles
 ├── package.json    # Project dependencies and scripts
 └── astro.config.mjs # Astro configuration
 ```
