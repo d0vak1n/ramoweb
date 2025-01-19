@@ -24,7 +24,7 @@ jobs:
 
       # 4. Deploy a la rama `build-deploy`
       - name: Deploy build
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: dist
