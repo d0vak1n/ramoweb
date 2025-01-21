@@ -12,7 +12,7 @@ jobs:
     steps:
       # 1. Chequea el código
       - name: Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 2. Instala las dependencias
       - name: Install dependencies
@@ -24,7 +24,7 @@ jobs:
 
       # 4. Deploy a la rama `build-deploy`
       - name: Deploy build
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: dist
