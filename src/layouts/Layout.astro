@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import logoOscuro from "../img/1.webp";
 import logoClaro from "../img/2.webp";
 import "../styles/global.css";
+import MainMenu from "../components/MainMenu.astro";
 interface Props {
 	title: string;
 }
@@ -52,21 +53,7 @@ const { title } = Astro.props;
 				Hello, I'm a software developer, fully interested in open source
 				projects and providing free information for everyone.
 			</h2>
-			<nav>
-				<ul
-					class="flex flex-col text-center sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 mt-4"
-				>
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/projects">Projects</a>
-					</li>
-					<li>
-						<a href="/contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
+			<MainMenu />
 		</div>
 		<slot />
 		<footer>
