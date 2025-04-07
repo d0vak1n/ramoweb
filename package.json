@@ -16,6 +16,6 @@
     "astro": "^5.3.1",
     "astro-robots": "^2.3.1",
     "tailwindcss": "^4.0.8",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   }
 }
