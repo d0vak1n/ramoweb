@@ -52,18 +52,30 @@ const { title } = Astro.props;
 				Hello, I'm a software developer, fully interested in open source
 				projects and providing free information for everyone.
 			</h2>
-			<nav>
+			<nav class="mt-6">
 				<ul
-					class="flex flex-col text-center sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 mt-4"
+					class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8"
 				>
 					<li>
-						<a href="/">Home</a>
+						<a
+							href="/"
+							class="nav-link relative px-4 py-2 text-lg font-medium transition-all duration-300 hover:text-[#0efeff] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#e213e6] after:to-[#0efeff] after:transition-all after:duration-300 hover:after:w-full"
+							>Home</a
+						>
 					</li>
 					<li>
-						<a href="/projects">Projects</a>
+						<a
+							href="/projects"
+							class="nav-link relative px-4 py-2 text-lg font-medium transition-all duration-300 hover:text-[#0efeff] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#e213e6] after:to-[#0efeff] after:transition-all after:duration-300 hover:after:w-full"
+							>Projects</a
+						>
 					</li>
 					<li>
-						<a href="/contact">Contact</a>
+						<a
+							href="/contact"
+							class="nav-link relative px-4 py-2 text-lg font-medium transition-all duration-300 hover:text-[#0efeff] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#e213e6] after:to-[#0efeff] after:transition-all after:duration-300 hover:after:w-full"
+							>Contact</a
+						>
 					</li>
 				</ul>
 			</nav>
@@ -76,6 +88,7 @@ const { title } = Astro.props;
 		</footer>
 	</body>
 </html>
+
 <style is:global>
 	html {
 		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
