@@ -3,6 +3,7 @@
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/d0vak1n/ramoweb)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://stackblitz.com/github/d0vak1n/ramoweb)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://stackblitz.com/github/d0vak1n/ramoweb)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/d0vak1n/ramoweb)
 
 Welcome to my portfolio! This project is designed to showcase my skills, projects, and experience as a developer. The portfolio is built with **Astro**, **TailwindCSS**, and **TypeScript**, ensuring a modern design and excellent performance.
 
