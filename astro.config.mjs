@@ -2,22 +2,18 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import robots from 'astro-robots';
-import tailwindcss from "@tailwindcss/vite";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [
-      tailwindcss()
-    ],
-  },
+  site: "https://ramoweb.com",
   integrations: [
+    tailwind(),
     sitemap(),
     robots({
       host: "ramoweb.com",
       sitemap: [
-        "https://ramoweb.com/sitemap-0.xml",
-        "https://www.ramoweb.com/sitemap-0.xml",
+        "https://ramoweb.com/sitemap-index.xml",
       ],
       policy: [
         {
