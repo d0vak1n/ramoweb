@@ -5,7 +5,7 @@ import logoOscuro from "../img/1.webp";
 import logoClaro from "../img/2.webp";
 import "../styles/global.css";
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -13,120 +13,125 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<ClientRouter />
-		<!-- Hotjar Tracking Code for https://ramoweb.com/ -->
-		<script>
-		    (function(h,o,t,j,a,r){
-		        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-		        h._hjSettings={hjid:3579484,hjsv:6};
-		        a=o.getElementsByTagName('head')[0];
-		        r=o.createElement('script');r.async=1;
-		        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-		        a.appendChild(r);
-		    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-		</script>
-		<meta charset="UTF-8" />
-		<meta
-			name="description"
-			content="RaMoWeb Portfolio. Hello, I'm a software developer, fully interested in open source projects and providing free information for everyone."
-		/>
-		<meta name="viewport" content="width=device-width" />
-		<meta
-			name="keywords"
-			content="software developer, open source, portfolio, RaMoWeb"
-		/>
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<div class="flex flex-col items-center m-8 align-middle">
-			<a href="/">
-				<div class="relative">
-					<Image
-						src={logoOscuro}
-						alt="Logo Ramoweb"
-						class="header-image w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16"
-						loading="eager"
-					/>
-					<Image
-						src={logoClaro}
-						alt="Logo Ramoweb Hover"
-						class="header-image-hover w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 absolute top-0 left-0 opacity-0"
-						loading="eager"
-					/>
-				</div>
-			</a>
-			<h1 class="header mx-8 my-4 text-center text-4xl">RamoWeb</h1>
-			<h2 class="text-gray-500 text-justify max-w-96 border-l-2 px-2">
-				Hello, I'm a software developer, fully interested in open source
-				projects and providing free information for everyone.
-			</h2>
-			<nav class="mt-6">
-				<ul
-					class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8"
-				>
-					<li>
-						<a
-							href="/"
-							class="nav-link relative px-4 py-2 text-lg font-medium transition-all duration-300 hover:text-[#0efeff] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#e213e6] after:to-[#0efeff] after:transition-all after:duration-300 hover:after:w-full"
-							>Home</a
-						>
-					</li>
-					<li>
-						<a
-							href="/projects"
-							class="nav-link relative px-4 py-2 text-lg font-medium transition-all duration-300 hover:text-[#0efeff] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#e213e6] after:to-[#0efeff] after:transition-all after:duration-300 hover:after:w-full"
-							>Projects</a
-						>
-					</li>
-					<li>
-						<a
-							href="/contact"
-							class="nav-link relative px-4 py-2 text-lg font-medium transition-all duration-300 hover:text-[#0efeff] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#e213e6] after:to-[#0efeff] after:transition-all after:duration-300 hover:after:w-full"
-							>Contact</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<slot />
-		<footer>
-			<div class="flex justify-center mb-6 mt-4">
-				RaMoWeb © {new Date().getFullYear()}
-			</div>
-		</footer>
-	</body>
+  <head>
+    <ClientRouter />
+    <!-- Hotjar Tracking Code for https://ramoweb.com/ -->
+    <script>
+      (function (h: any, o: any, t: any, j: any, a?: any, r?: any) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3579484, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="RaMoWeb Portfolio. Hello, I'm a software developer, fully interested in open source projects and providing free information for everyone."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="keywords"
+      content="software developer, open source, portfolio, RaMoWeb"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="flex flex-col items-center m-8 align-middle">
+      <a href="/">
+        <div class="relative">
+          <Image
+            src={logoOscuro}
+            alt="Logo Ramoweb"
+            class="header-image w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16"
+            loading="eager"
+          />
+          <Image
+            src={logoClaro}
+            alt="Logo Ramoweb Hover"
+            class="header-image-hover w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 lg:w-16 lg:h-16 xl:w-16 xl:h-16 absolute top-0 left-0 opacity-0"
+            loading="eager"
+          />
+        </div>
+      </a>
+      <h1 class="header mx-8 my-4 text-center text-4xl">RamoWeb</h1>
+      <h2 class="text-gray-500 text-justify max-w-96 border-l-2 px-2">
+        Hello, I'm a software developer, fully interested in open source
+        projects and providing free information for everyone.
+      </h2>
+      <nav class="mt-6">
+        <ul
+          class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8"
+        >
+          <li>
+            <a
+              href="/"
+              class="nav-link relative px-4 py-2 text-lg font-medium transition-all duration-300 hover:text-[#0efeff] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#e213e6] after:to-[#0efeff] after:transition-all after:duration-300 hover:after:w-full"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/projects"
+              class="nav-link relative px-4 py-2 text-lg font-medium transition-all duration-300 hover:text-[#0efeff] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#e213e6] after:to-[#0efeff] after:transition-all after:duration-300 hover:after:w-full"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="/contact"
+              class="nav-link relative px-4 py-2 text-lg font-medium transition-all duration-300 hover:text-[#0efeff] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[#e213e6] after:to-[#0efeff] after:transition-all after:duration-300 hover:after:w-full"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <slot />
+    <footer>
+      <div class="flex justify-center mb-6 mt-4">
+        RaMoWeb © {new Date().getFullYear()}
+      </div>
+    </footer>
+  </body>
 </html>
 
 <style is:global>
-	html {
-		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-			"Liberation Mono", "Courier New", monospace;
-		background-color: #000;
-		color: #fff;
-	}
+  html {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    background-color: #000;
+    color: #fff;
+  }
 
-	.header {
-		text-shadow:
-			-1px -1px 0px #0efeff,
-			1px 1px 0px #e213e6;
-	}
+  .header {
+    text-shadow:
+      -1px -1px 0px #0efeff,
+      1px 1px 0px #e213e6;
+  }
 
-	.header-image {
-		transition: opacity 0.8s ease-in-out;
-	}
+  .header-image {
+    transition: opacity 0.8s ease-in-out;
+  }
 
-	.header-image-hover {
-		transition: opacity 0.8s ease-in-out;
-	}
+  .header-image-hover {
+    transition: opacity 0.8s ease-in-out;
+  }
 
-	.relative:hover .header-image {
-		opacity: 0;
-	}
+  .relative:hover .header-image {
+    opacity: 0;
+  }
 
-	.relative:hover .header-image-hover {
-		opacity: 1;
-	}
+  .relative:hover .header-image-hover {
+    opacity: 1;
+  }
 </style>
