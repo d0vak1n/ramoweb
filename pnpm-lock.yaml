@@ -12,7 +12,7 @@ importers:
         specifier: ^0.9.4
         version: 0.9.4(typescript@5.9.2)
       '@astrojs/sitemap':
-        specifier: ^3.4.1
+        specifier: ^3.4.2
         version: 3.4.2
       '@tailwindcss/vite':
         specifier: ^4.1.7
@@ -2601,7 +2601,7 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 24.1.0
 
   '@types/unist@3.0.3': {}
 
