@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/sitemap": "^3.4.2",
+    "@astrojs/sitemap": "^3.5.1",
     "@tailwindcss/vite": "^4.1.12",
     "astro": "^5.12.8",
     "astro-robots": "^2.3.1",
