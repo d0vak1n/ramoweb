@@ -15,7 +15,7 @@
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.14.1",
     "astro-robots": "^2.3.1",
-    "tailwindcss": "^4.1.13",
+    "tailwindcss": "^4.1.14",
     "typescript": "^5.9.2"
   }
 }
