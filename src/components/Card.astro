@@ -1,91 +1,97 @@
 ---
 interface Props {
-	title: string;
-	body: string;
-	github: string;
-	demo?: string;
-	tags: string[];
+  title: string;
+  body: string;
+  github?: string;
+  demo?: string;
+  tags: string[];
 }
 
 const { title, body, tags, github, demo } = Astro.props;
 ---
 
 <div
-	class="flex flex-col bg-black border border-white rounded p-6 w-full h-full"
+  class='flex flex-col bg-black border border-white rounded p-6 w-full h-full'
 >
-	<li class="link-card list-none">
-		<div>
-			<h3>
-				{title}
-			</h3>
-			<p class="text-justify">
-				{body}
-			</p>
-			<div class="flex flex-wrap gap-2 mt-2 justify-center">
-				{tags.map((tag) => <span class="tag">{tag}</span>)}
-			</div>
-			<div class="flex justify-between mt-6">
-				<a
-					class="link github hover:animate-pulse"
-					href={github}
-					target="_blank"
-					rel="noopener noreferrer">github</a
-				>
-				{
-					demo && (
-						<a
-							class="link demo hover:animate-pulse"
-							href={demo}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							demo
-						</a>
-					)
-				}
-			</div>
-		</div>
-	</li>
+  <li class='link-card list-none'>
+    <div>
+      <h3>
+        {title}
+      </h3>
+      <p class='text-justify'>
+        {body}
+      </p>
+      <div class='flex flex-wrap gap-2 mt-2 justify-center'>
+        {tags.map((tag) => <span class='tag'>{tag}</span>)}
+      </div>
+      <div class='flex justify-between mt-6'>
+        {
+          github && (
+            <a
+              class='link github hover:animate-pulse'
+              href={github}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              github
+            </a>
+          )
+        }
+        {
+          demo && (
+            <a
+              class='link demo hover:animate-pulse'
+              href={demo}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              demo
+            </a>
+          )
+        }
+      </div>
+    </div>
+  </li>
 </div>
 
 <style>
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
 
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
 
-	.link {
-		background-color: #000;
-		padding: 0.5rem 1rem;
-		transition: transform 0.3s ease;
+  .link {
+    background-color: #000;
+    padding: 0.5rem 1rem;
+    transition: transform 0.3s ease;
 
-		&.github {
-			color: #0efeff;
-		}
+    &.github {
+      color: #0efeff;
+    }
 
-		&.demo {
-			color: #e213e6;
-		}
-	}
+    &.demo {
+      color: #e213e6;
+    }
+  }
 
-	.link:hover {
-		transform: scale(1.1);
-	}
+  .link:hover {
+    transform: scale(1.1);
+  }
 
-	.tag {
-		transition:
-			transform 0.3s ease,
-			padding 0.3s ease;
-	}
+  .tag {
+    transition:
+      transform 0.3s ease,
+      padding 0.3s ease;
+  }
 
-	.tag:hover {
-		transform: scale(1.1);
-		padding: 0 1rem;
-	}
+  .tag:hover {
+    transform: scale(1.1);
+    padding: 0 1rem;
+  }
 </style>
