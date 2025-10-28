@@ -6,10 +6,11 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ramoweb.com',
+  site: "https://ramoweb.com",
   vite: {
     plugins: [
-      tailwindcss()
+      // @ts-ignore - Type incompatibility between Tailwind CSS Vite plugin and Astro
+      tailwindcss(),
     ],
   },
   integrations: [
